@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anointed Taste Hub - Authentic Nigerian Cuisine</title>
+    <meta name="description" content="Experience authentic Nigerian cuisine at Anointed Taste Hub. Master Chef Anointing Ikeru brings traditional flavors to Enugu State University.">
+    
+     <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+     <!-- Custom CSS  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Navigation  -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-utensils"></i>
+                <a href="#home">Anointed Taste Hub</a>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+         <!-- Mobile Menu  -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#menu" class="mobile-link">Menu</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+     <!-- Hero Section  -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Authentic Nigerian Cuisine</h1>
+            <p class="hero-subtitle">Experience the rich flavors of Nigeria crafted by our master chef Anointing Ikeru</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Make Reservation</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section  -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/ourstory.jpg-5yqCugCJo6dWEtRWlhUr4SHY7vCbXU.jpeg" alt="Nigerian Chef's Special Presentation">
+                </div>
+                <div class="about-text">
+                    <h3>Tradition Meets Innovation</h3>
+                    <p>Founded in 2025, Anointed Taste Hub brings authentic Nigerian flavors to your table. Our master chef, Anointing Ikeru, has perfected traditional Nigerian recipes passed down through generations, combining time-honored cooking methods with modern presentation.</p>
+                    <p>We source only the freshest local ingredients daily, combining traditional Nigerian techniques with contemporary presentation to create a dining experience that honors our rich culinary heritage while appealing to modern tastes.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fresh Local Ingredients</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Traditional Techniques</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Master Chef</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Authentic Recipes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Menu Section  -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Explore our selection of traditional and contemporary Nigerian dishes</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="menu-category active" data-category="all">All</button>
+                <button class="menu-category" data-category="rice">Rice Dishes</button>
+                <button class="menu-category" data-category="soup">Soups</button>
+                <button class="menu-category" data-category="grilled">Grilled</button>
+                <button class="menu-category" data-category="special">Special</button>
+            </div>
+
+            <div class="menu-grid">
+                 <!-- Menu Item 1  -->
+                <div class="menu-item" data-category="rice">
+                    <div class="menu-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/jellofrice.jpg-oqMaRkw5JeWCiTyowcVYinKq8GP4A2.jpeg" alt="Jollof Rice">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Jollof Rice</h3>
+                            <span class="price">₦2,500</span>
+                        </div>
+                        <p>Perfectly seasoned rice cooked with tomatoes, peppers, and spices, served with chicken</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(48)</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Menu Item 2  -->
+                <div class="menu-item" data-category="soup">
+                    <div class="menu-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/egusisoup.jpg-nx2g5htKT6xZ1d9Hoaiy72KyOfr03v.jpeg" alt="Egusi Soup">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Egusi Soup</h3>
+                            <span class="price">₦3,000</span>
+                        </div>
+                        <p>Rich melon seed soup with assorted meat, fish, and vegetables, served with pounded yam</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(62)</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Menu Item 3  -->
+                <div class="menu-item" data-category="grilled">
+                    <div class="menu-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/suya.jpg-MJ1jpmGXbo7yFazznHrgCiSyi36Iq1.jpeg" alt="Suya">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Suya</h3>
+                            <span class="price">₦1,800</span>
+                        </div>
+                        <p>Spicy grilled beef skewers seasoned with traditional suya spice blend</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(87)</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Menu Item 4  -->
+                <div class="menu-item" data-category="special">
+                    <div class="menu-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/peppersoup.jpg-P8QSCD2gT2z2IgdblhW3IsJOXFdtKh.jpeg" alt="Pepper Soup">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Pepper Soup</h3>
+                            <span class="price">₦2,200</span>
+                        </div>
+                        <p>Spicy aromatic soup with assorted meat, fish, and traditional herbs</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(35)</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Menu Item 5  -->
+                <div class="menu-item" data-category="rice">
+                    <div class="menu-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/friedrice.jpg-SyOrLxV1ORPFpZdEMRG42k1DpwqrVC.jpeg" alt="Fried Rice">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Fried Rice</h3>
+                            <span class="price">₦2,800</span>
+                        </div>
+                        <p>Colorful fried rice with mixed vegetables, liver, and chicken</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(28)</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Menu Item 6  -->
+                <div class="menu-item" data-category="soup">
+                    <div class="menu-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/bitterleafsoup.jpg-gZXCmPpi6NlqaV6RKK9ORYT0bgq8lF.jpeg" alt="Bitter Leaf Soup">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Bitter Leaf Soup</h3>
+                            <span class="price">₦3,200</span>
+                        </div>
+                        <p>Traditional soup made with bitter leaf, assorted meat, and stockfish, served with fufu</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(54)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Gallery Section - Carousel  -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">A visual journey through our culinary creations</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track" id="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jellofrice.jpg-EPAgC1zdMRTjfnpJY8yWA209t5ZS9Y.jpeg" alt="Jollof Rice">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/egusisoup.jpg-ZI3QzLZOKPYuTS5LTzOjwzXL1CDoC0.jpeg" alt="Egusi Soup">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/suya.jpg-K4mMJnyzYEJ44zVpSNLDbmjPDdlaZY.jpeg" alt="Suya">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/peppersoup.jpg-Cd2aRAeWa4TJdQkatpAgYesf4pxIkS.jpeg" alt="Pepper Soup">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/friedrice.jpg-Uqm9eH9F0RcS4JrZ3q7ij5urLgDElI.jpeg" alt="Fried Rice">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bitterleafsoup.jpg-nUnTKbO6Dvo0OHC2ZSpO6M2MrQZ5rm.jpeg" alt="Bitter Leaf Soup">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Testimonials Section  -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/32-WZIaZJZ2UxQkol0zLjivbTvJqmuL18.jpg" alt="Sarah J.">
+                        <div>
+                            <h4>Sarah J.</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The best Nigerian food I've had! The jollof rice is incredibly flavorful and the egusi soup reminds me of home. The pepper soup is my absolute favorite."</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/45-BlOF41R1Fh3KZkGWj1ZWYHAsldy3sK.jpg" alt="Michael T.">
+                        <div>
+                            <h4>Michael T.</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Authentic flavors and excellent service. Chef Anointing's special platter was amazing - so many different traditional dishes. Will definitely be back!"</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/68-GRkNmO7s8KFOEy4hOWfUN7bsSZn0v1.jpg" alt="Jennifer L.">
+                        <div>
+                            <h4>Jennifer L.</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The atmosphere is lovely and the food is exceptional. I especially appreciate their attention to traditional Nigerian cooking methods. The suya was perfectly spiced!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact Section  -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">We'd love to hear from you. Make a reservation or ask us anything.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Enugu State University of Science and Technology<br>Enugu State, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(+234)-915-741-4510</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>anointingikeru35@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Thursday: 11:30 AM - 10:00 PM<br>
+                            Friday - Saturday: 11:30 AM - 11:00 PM<br>
+                            Sunday: 12:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Map Section  -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.647527907694!2d7.522909673502671!3d6.309951325611171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104359ccedb476bd%3A0xce030f0a35c4e601!2sEnugu%20State%20University%20Of%20Science%20And%20Technology!5e0!3m2!1sen!2sng!4v1758819646703!5m2!1sen!2sng" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+     <!-- Footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Anointed Taste Hub</h3>
+                    <p>Bringing authentic Nigerian flavors to your table since 2025.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Enugu State University of Science and Technology</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(+234)-915-741-4510</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>anointingikeru35@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anointed Taste Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Back to Top Button  -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+     <!-- JavaScript  -->
+    <script src="script.js"></script>
+</body>
+</html>
